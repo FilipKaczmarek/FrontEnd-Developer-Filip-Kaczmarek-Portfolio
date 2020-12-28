@@ -169,7 +169,7 @@
       <section class="contact" id="contact">
         <div class="contact__container flex">
           <div class="contact__content flex">
-            <h2>SEND ME A MESSAGE!</h2>
+            <h2 class="contact__content--header">SEND ME A MESSAGE!</h2>
             <div class="visual-effect">
               <hr class="visual-effect__rule" />
               <hr class="visual-effect__rule" />
@@ -178,34 +178,37 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repellendus voluptates neque pariatur, molestias, hic illum libero deleniti nulla expedita ex quia eveniet fuga necessitatibus aliquam aliquid sapiente obcaecati eos.</p>
             </div>
             <div class="contact__content-data">
-              <p></p>
-              <p>(+48)504-722-702</p>
+              <span class="content-data__email content-data--span"><i class="fas fa-envelope content-data--span_icon"></i> f.kaczmarek1@wp.pl</span>
+              <span class="content-data__phone content-data--span"><i class="fas fa-phone-alt content-data--span_icon"></i> (+48)504-722-702</span>
             </div>
           </div>
-          <div class="contact__form">
-            <form action="">
-              <label for="name"
-                ><span>Name</span>
-                <input type="text" required />
+          <div class="contact__form-containter">
+            <form action="" class="contact__form">
+              <label for="name" class="contact__form-label"
+                ><span class="contact__form-name">Name</span>
+                <input type="text" required class="contact__form-input"
+                placeholder="What's your name?"/>
               </label>
-              <label for="email"
-                ><span>E-mail</span>
-                <input type="email" required />
+              <label for="email" class="contact__form-label"
+                ><span class="contact__form-name">E-mail</span>
+                <input type="email" required class="contact__form-input" 
+                placeholder="What's your e-mail address?"/>
               </label>
-              <label for="subject"
-                ><span>Subject</span>
-                <input type="text" />
+              <label for="subject" class="contact__form-label"
+                ><span class="contact__form-name">Subject</span>
+                <input type="text" class="contact__form-input" 
+                placeholder="How can I help you?"/>
               </label>
-              <label for="Message"
-                ><span>Message</span>
+              <label for="Message" class="contact__form-label"
+                ><span class="contact__form-name">Message</span>
                 <textarea
                   name="message"
-                  class="textarea__form"
-                  cols="30"
-                  rows="10"
+                  placeholder="Write your message here ..."
+                  class="contact__form-textarea"
                 ></textarea>
               </label>
             </form>
+            <input class="contact__form-submit" type="submit" value="SEND">
           </div>
         </div>
       </section>

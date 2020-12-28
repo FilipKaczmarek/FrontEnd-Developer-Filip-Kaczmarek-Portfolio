@@ -44,6 +44,14 @@ a {
   border: none;
 }
 
+.about-me__header,
+.contact__content--header{
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /* NAV */
 .nav {
   background-color: #104d43;
@@ -158,12 +166,6 @@ a {
 /* END OF SECTION HOME */
 
 /* START OF SECTION ABOUT ME */
-.about-me__header {
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-  text-align: center;
-  text-transform: uppercase;
-}
 
 .about-me__content {
   flex-direction: column-reverse;
@@ -261,3 +263,68 @@ a {
     justify-content: center;
     align-items: center;
 }
+
+.contact__content-paragraphe{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.content-data--span{
+  text-align: center;
+  padding: 0.5rem;
+  display: block;
+  width: 100%;
+}
+
+.content-data--span_icon{
+  color: #45e6a2;
+}
+/* FORM */
+.contact__form-containter{
+  background-color: #104d43;
+  width: 85%;
+  margin: 1rem auto;
+}
+
+.contact__form{
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 0.5rem;
+}
+
+.contact__form-name{
+  display: block;
+  font-weight: 700;
+  padding-top: 0.8rem;
+  font-size: 0.8rem;
+} 
+
+.contact__form-input{
+ height: 1.5rem;
+}
+
+.contact__form-input,
+.contact__form-textarea{
+  width: 100%;
+  outline: none;
+}
+
+.contact__form-textarea{
+  resize: none;
+  height: 190px;
+  overflow-y: scroll;
+}
+
+.contact__form-submit{
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #45e6a2;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.1rem;
+}
+
+/* END OF SECTION CONTACT*/
