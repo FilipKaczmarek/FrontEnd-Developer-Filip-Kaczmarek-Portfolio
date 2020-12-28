@@ -1,0 +1,263 @@
+@charset "UTF-8";
+/* MOBILE FIRST */
+
+/* GENERAL */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* COMMON */
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.visual-effect {
+  width: 100%;
+  height: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.visual-effect__rule {
+  min-width: 12%;
+  max-width: 13%;
+
+  height: 4px;
+  background-color: #45e6a2;
+  border: none;
+}
+
+/* NAV */
+.nav {
+  background-color: #104d43;
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.nav-bar {
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  /* height: 100%; */
+}
+
+.nav__logo-link {
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__logo-img {
+  max-height: 50%;
+  padding-left: 1.5rem;
+  /* object-fit: cover; */
+}
+.nav-containter-list {
+  flex-basis: 55%;
+  align-items: center;
+}
+
+.nav__icon,
+.nav__logo {
+  height: 100%;
+  flex-basis: 20%;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__list {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.nav__list-item {
+  flex-direction: column;
+  flex-basis: 100%;
+  padding: 1rem;
+}
+
+.nav__list-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+
+/* WHEN HAMBYRGER IS NOT CLICKED */
+.nav__list--hidden {
+  display: none;
+}
+
+/* WHEN HAMBURGER IS CLICKED */
+/* .nav__logo--hidden{
+    visibility:hidden
+} */
+
+/* END OF NAV */
+
+/* START OF SECTION HOME */
+.home {
+  position: relative;
+  margin-top: 3rem;
+  height: 90vh;
+  width: 100vw;
+  background-color: #104d43;
+  color: #ffffff;
+}
+
+.home__info {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 85%;
+
+  text-align: center;
+  padding: 2rem 1.5rem;
+}
+
+.header__h1 {
+  text-transform: uppercase;
+}
+
+.fa-arrow-circle-down {
+  position: absolute;
+  color: #45e6a2;
+  cursor: pointer;
+  font-size: 1.9rem;
+
+  left: 50%;
+  bottom: 5%;
+  transform: translate(-50%, -50%);
+}
+/* END OF SECTION HOME */
+
+/* START OF SECTION ABOUT ME */
+.about-me__header {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about-me__content {
+  flex-direction: column-reverse;
+  padding: 1rem 1.5rem;
+}
+
+.about-me__img {
+  min-height: 300px;
+}
+
+.photo--of--me {
+  display: block;
+  width: 100%;
+  background-color: #104d43;
+  border-radius: 50% 50%;
+}
+
+.about--me__line {
+  min-width: 90%;
+  max-width: 93%;
+
+  margin: 0.8rem auto;
+  height: 4px;
+  background-color: #45e6a2;
+  border: none;
+}
+
+/* START OF SECTION ABOUT ME - SKILLS LIST*/
+.about-me__lists {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me__list {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0.8rem 1.5rem;
+}
+
+.about-me__list-header {
+  color: #104d43;
+}
+
+.about-me__list-items {
+  list-style: none;
+  line-height: 1.8rem;
+}
+/* END OF SECTION ABOUT ME - SKILLS LIST*/
+/* START OF SECTION PORTFOLIO*/
+
+.portfolio {
+    color: #ffffff;
+  background-color: #104d43;
+  width: 100%;
+}
+
+.header__h2 {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.portfolio__projects {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.portfolio__project {
+    margin: 0.5rem auto;
+}
+
+.project-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+/* END OF SECTION PORTFOLIO*/
+/* START OF SECTION CONTACT*/
+
+.contact{
+    width: 100%;
+    height: auto;
+}
+
+.contact__container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
