@@ -328,3 +328,39 @@ a {
 }
 
 /* END OF SECTION CONTACT*/
+/* START OF SECTION FOOTER*/
+.footer{
+  color: #ffffff;
+  background-color: #104d43;
+  width: 100%;
+
+  padding: 1rem;
+}
+
+.footer__links-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  list-style: none;
+}
+.footer__links{
+  padding-bottom: 0.5rem;
+}
+
+.footer__links-list-item{
+  padding: 0 0.5rem;
+}
+
+.footer__links-list-item >li {
+  font-size: 1.4rem;
+}
+
+.footer__copyright{
+  text-align: center;
+}
+
+.footer__copyright-paragraphe{
+  color: #45e6a2;
+  font-size: 0.8rem;
+}
