@@ -130,6 +130,22 @@ a {
     visibility:hidden
 } */
 
+@media screen and (min-width: 1024px){
+  .nav__icon{
+    display: none;
+  }
+  .nav-containter-list{
+    flex-basis: 85%;
+  }
+  .nav__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nav__list--hidden {
+    display: inline-block;
+  }
+}
+
 /* END OF NAV */
 
 /* START OF SECTION HOME */
