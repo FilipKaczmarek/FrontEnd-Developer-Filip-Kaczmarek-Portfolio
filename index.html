@@ -32,7 +32,7 @@
   <body>
     <header class="nav" id="nav">
 
-      <nav class="nav-bar flex">
+      <nav class="nav-bar flex container--fixed">
 
         <div class="nav__logo nav__logo--hidden">
           <a href="#" class="nav__logo-link flex">
@@ -57,13 +57,13 @@
     </header>
     <main>
       <section class="home" id="home">
-        <div class="home__info flex">
+        <div class="home__info flex container--fixed">
           <h1 class="header__h1">hey there! I'm Filip!</h1>
           <div class="visual-effect">
             <hr class="visual-effect__rule" />
             <hr class="visual-effect__rule" />
           </div>
-          <p>
+          <p class="home__paragraphe">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
             sint vitae omnis quod dicta eum repudiandae enim accusantium.
           </p>
@@ -71,7 +71,7 @@
         <i class="fas fa-arrow-circle-down"></i>
       </section>
 
-      <section class="about-me" id="about-me">
+      <section class="about-me container--fixed" id="about-me">
         <div class="container">
           <h2 class="about-me__header">ABOUT ME</h2>
           <div class="visual-effect">
@@ -143,29 +143,29 @@
           </div>
 
           <div class="portfolio__projects">
-            <div class="portfolio__project col xs-8">
+            <div class="portfolio__project col xs-8 md-6 lg-4">
               <img class="project-image" src="./images/pexels-cottonbro-5054213.jpg" alt="">
             </div>
-            <div class="portfolio__project  col xs-8">
+            <div class="portfolio__project  col xs-8 md-6 lg-4">
                 <img class="project-image" src="./images/pexels-dzenina-lukac-930530.jpg" alt="">
             </div>
-            <div class="portfolio__project  col xs-8">
+            <div class="portfolio__project  col xs-8 md-6 lg-4">
               <img class="project-image" src="./images/pexels-fauxels-3184454.jpg" alt="">
             </div>
-            <div class="portfolio__project  col xs-8">
+            <div class="portfolio__project  col xs-8 md-6 lg-4">
               <img class="project-image" src="./images/pexels-julia-m-cameron-4144294.jpg" alt="">
             </div>
-            <div class="portfolio__project col xs-8">
+            <div class="portfolio__project col xs-8 md-6 lg-4">
               <img class="project-image" src="./images/pexels-oleg-magni-2058128.jpg" alt="">
             </div>
-            <div class="portfolio__project  col xs-8">
+            <div class="portfolio__project  col xs-8 md-6 lg-4">
                 <img class="project-image" src="./images/pexels-tranmautritam-326501.jpg" alt="">
             </div>
           </div>
         </div>
       </section>
 
-      <section class="contact" id="contact">
+      <section class="contact container--fixed" id="contact">
         <div class="contact__container flex">
           <div class="contact__content flex">
             <h2 class="contact__content--header">SEND ME A MESSAGE!</h2>
@@ -217,8 +217,9 @@
         <ul class="footer__links-list">
           <a href="https://github.com/FilipKaczmarek" class="footer__links-list-item"
           target="_blank"> 
-            <li><i class="fab fa-linkedin"></i></li></a>
-          <a href="https://www.linkedin.com/in/filip-kaczmarek-680354144/" class="footer__links-list-item" target="_blank"><li><i class="fab fa-github-square"></i></li></a>
+            <li><i class="fab fa-linkedin footer__icone"></i></li></a>
+          <a href="https://www.linkedin.com/in/filip-kaczmarek-680354144/" class="footer__links-list-item" target="_blank">
+            <li><i class="fab fa-github-square footer__icone"></i></li></a>
         </ul>
       </div>
       <div class="footer__copyright">

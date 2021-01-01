@@ -167,6 +167,14 @@ a {
   bottom: 5%;
   transform: translate(-50%, -50%);
 }
+@media screen and (min-width: 1024px){
+  .header__h1 {
+    font-size: 2rem;
+  }
+  .home__paragraphe{
+    font-size: 1.2rem;
+  }
+}
 /* END OF SECTION HOME */
 
 /* START OF SECTION ABOUT ME */
@@ -183,7 +191,8 @@ a {
 
 .photo--of--me {
   display: block;
-  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
   background-color: #104d43;
   border-radius: 50% 50%;
 }
@@ -203,9 +212,8 @@ a {
 }
 
 @media screen and (min-width: 760px){
-
   .photo--of--me {
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
 
   }
@@ -229,6 +237,18 @@ a {
   }
   .about-me__text{
     flex-basis: 50%;
+  }
+  .about-me__header{
+    font-size: 1.8rem;
+  }
+  .about-me__text-paragraphe{
+    font-size: 1.2rem;
+  }
+  .about-me__list-header{
+    font-size: 1.4rem;
+  }
+  .about-me__list-items li {
+    font-size: 1.2rem;
   }
 }
 
@@ -264,6 +284,9 @@ a {
   .about-me__list {
     flex-basis: 33%;
   }
+  .header__h2{
+    font-size: 1.8rem;
+  }
 }
 
 /* END OF SECTION ABOUT ME - SKILLS LIST*/
@@ -295,6 +318,20 @@ a {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+}
+
+@media screen and (min-width: 760px){
+  .portfolio__projects {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .portfolio__projects {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 /* END OF SECTION PORTFOLIO*/
 /* START OF SECTION CONTACT*/
@@ -378,11 +415,9 @@ a {
 }
 
 @media screen and (min-width: 1024px){
-  .contact{
-    margin: 2rem 0;
-  }
   .contact__container{
     flex-direction: row;
+    margin: 2rem 0;
 }
 
 .contact__form-containter{
@@ -391,6 +426,16 @@ a {
 }
   .contact__content{
     flex-basis: 50%;
+  }
+  .contact__content--header{
+    font-size: 1.8rem;
+  }
+  .contact__content-paragraphe,
+  .contact__content-data{
+    font-size: 1.2rem;
+  }
+  .contact__form-name{
+    font-size: 1rem;
   }
 }
 
@@ -430,4 +475,11 @@ a {
 .footer__copyright-paragraphe{
   color: #45e6a2;
   font-size: 0.8rem;
+}
+
+@media screen and (min-width: 1024px){
+  .footer__copyright-paragraphe,
+  .footer__icone{
+    font-size: 1rem;
+  }
 }
