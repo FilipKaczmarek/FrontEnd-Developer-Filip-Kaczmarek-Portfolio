@@ -214,6 +214,24 @@ a {
   }
 }
 
+@media screen and (min-width: 1024px){
+  .about-me__content {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .photo--of--me {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-me__text{
+    flex-basis: 50%;
+  }
+}
+
 /* START OF SECTION ABOUT ME - SKILLS LIST*/
 .about-me__lists {
   display: flex;
@@ -235,6 +253,19 @@ a {
   list-style: none;
   line-height: 1.8rem;
 }
+
+@media screen and (min-width: 1024px){
+  .about-me__lists{
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto 1rem auto;
+  }
+  .about-me__list {
+    flex-basis: 33%;
+  }
+}
+
 /* END OF SECTION ABOUT ME - SKILLS LIST*/
 /* START OF SECTION PORTFOLIO*/
 
@@ -344,6 +375,23 @@ a {
   border: none;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.1rem;
+}
+
+@media screen and (min-width: 1024px){
+  .contact{
+    margin: 2rem 0;
+  }
+  .contact__container{
+    flex-direction: row;
+}
+
+.contact__form-containter{
+  flex-basis: 50%;
+  margin: 0 1.5rem 0 0;
+}
+  .contact__content{
+    flex-basis: 50%;
+  }
 }
 
 /* END OF SECTION CONTACT*/
