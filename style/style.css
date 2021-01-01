@@ -177,7 +177,8 @@ a {
 }
 
 .about-me__img {
-  min-height: 300px;
+  /* min-height: 300px; */
+  object-fit: contain;
 }
 
 .photo--of--me {
@@ -199,6 +200,18 @@ a {
   height: 4px;
   background-color: #45e6a2;
   border: none;
+}
+
+@media screen and (min-width: 760px){
+
+  .photo--of--me {
+    width: 70%;
+    margin: 0 auto;
+
+  }
+  .about-me__img{
+    object-fit: contain;
+  }
 }
 
 /* START OF SECTION ABOUT ME - SKILLS LIST*/
