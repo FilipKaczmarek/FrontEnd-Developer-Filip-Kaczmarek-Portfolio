@@ -135,7 +135,10 @@ a {
     display: none;
   }
   .nav-containter-list{
-    flex-basis: 85%;
+    flex-basis: 90%;
+  }
+  .nav__logo{
+    flex-basis: 10%;
   }
   .nav__list {
     flex-direction: row;
@@ -143,6 +146,13 @@ a {
   }
   .nav__list--hidden {
     display: inline-block;
+  }
+  .nav__list-item--polish-version{
+    color: black;
+    background-color: #45e6a2;
+    padding: 0.6rem 1.3rem;
+    margin: 0.5rem;
+    border-radius:28px;
   }
 }
 
@@ -185,9 +195,11 @@ a {
 }
 @media screen and (min-width: 1024px){
   .header__h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    padding-bottom: 1.5rem;
   }
   .home__paragraphe{
+    padding-top: 1.5rem;
     font-size: 1.2rem;
   }
 }
@@ -233,9 +245,6 @@ a {
     margin: 0 auto;
 
   }
-  .about-me__img{
-    object-fit: contain;
-  }
 }
 
 @media screen and (min-width: 1024px){
@@ -244,15 +253,21 @@ a {
     justify-content: center;
     align-items: center;
   }
-
-  .photo--of--me {
-    flex-basis: 50%;
+  .about-me__img {
+    /* height: max-content */
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
+  .photo--of--me {
+    margin: 0;
+    background-color: #104d43;
+    border-radius: 50% 50%;
+  }
   .about-me__text{
     flex-basis: 50%;
+    padding-top: 0;
   }
   .about-me__header{
     font-size: 1.8rem;
@@ -404,6 +419,7 @@ a {
 } 
 
 .contact__form-input{
+  font-family: "Source Sans Pro", sans-serif;
  height: 1.5rem;
 }
 
@@ -449,6 +465,9 @@ a {
   .contact__content-paragraphe,
   .contact__content-data{
     font-size: 1.2rem;
+  }
+  .contact__content-paragraphe > p{
+    line-height: 2rem;
   }
   .contact__form-name{
     font-size: 1rem;
@@ -496,6 +515,6 @@ a {
 @media screen and (min-width: 1024px){
   .footer__copyright-paragraphe,
   .footer__icone{
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }
