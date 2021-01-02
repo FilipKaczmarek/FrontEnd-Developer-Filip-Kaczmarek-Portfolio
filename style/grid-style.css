@@ -103,8 +103,10 @@
   }
 
   .col.md-6 {
-    flex-basis: 50%;
-    max-width: 50%;
+    /* flex-basis: 50%;
+    max-width: 50%; */
+    flex-basis: 48.555%;
+    max-width: 48.555%;
   }
 
   .col.md-5 {
@@ -175,8 +177,10 @@
   }
 
   .col.lg-4 {
-    flex-basis: 33.33333333%;
-    max-width: 33.33333333%;
+    /* flex-basis: 33.33333333%;
+    max-width: 33.33333333%; */
+    flex-basis: 31.555%;
+    max-width: 31.555%;
   }
 
   .col.lg-3 {
