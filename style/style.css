@@ -194,7 +194,6 @@ a {
   animation: MoveUpAndDown 1.5s ease-in-out infinite;
 }
 
-
 @keyframes MoveUpAndDown {
   0%   { bottom: 5% }
   50%  { bottom: 10% }
@@ -514,6 +513,9 @@ a {
 .footer__copyright{
   text-align: center;
 }
+.footer__icone{
+  font-size: 1rem;
+}
 
 .footer__copyright-paragraphe{
   color: #45e6a2;
@@ -521,8 +523,10 @@ a {
 }
 
 @media screen and (min-width: 1024px){
-  .footer__copyright-paragraphe,
   .footer__icone{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+  }
+  .footer__copyright-paragraphe{
+    font-size: 1rem;
   }
 }
