@@ -18,6 +18,18 @@ p {
   line-height: 1.5;
 }
 
+h2{
+  text-transform: uppercase;
+  padding: 1rem 0 0.5rem 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px){
+  h2{
+    font-size: 2rem;
+    padding: 2rem 0 1rem 0;
+  }
+}
 /* COMMON */
 
 a {
@@ -48,17 +60,9 @@ a {
   border: none;
 }
 
-.about-me__header,
-.contact__content--header{
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 /* NAV */
 .nav {
-  background-color: #104d43;
+  background-color: #005866;
   width: 100%;
 
   position: fixed;
@@ -167,7 +171,7 @@ a {
   margin-top: 3rem;
   height: 90vh;
   width: 100vw;
-  background-color: #104d43;
+  background-color: #005866;
   color: #ffffff;
 }
 
@@ -266,10 +270,6 @@ a {
     align-items: center;
   }
   .about-me__img {
-    /* height: max-content */
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     flex-basis: 50%;
   }
 
@@ -284,11 +284,8 @@ a {
     flex-basis: 50%;
     padding-top: 0;
   }
-  .about-me__header{
-    font-size: 1.8rem;
-  }
   .about-me__text-paragraphe{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .about-me__list-header{
     font-size: 1.4rem;
@@ -298,7 +295,7 @@ a {
   }
   .about--me__line{
     width: 100%;
-    margin: 1.5rem 0;
+    margin: 1rem 0;
   }
 }
 
@@ -316,12 +313,16 @@ a {
 }
 
 .about-me__list-header {
+  text-transform: uppercase;
   color: #104d43;
+  margin-bottom: 0.5rem;
 }
 
 .about-me__list-items {
   list-style: none;
-  /* line-height: 1.8rem; */
+}
+.about-me__list-items li{
+  padding: 0.25rem 0;
 }
 
 @media screen and (min-width: 1024px){
@@ -334,9 +335,16 @@ a {
   .about-me__list {
     flex-basis: 33%;
   }
-  .header__h2{
-    font-size: 1.8rem;
+  .about-me__list * {
+    text-align: left;
   }
+  .about-me__list-items > li::before {
+    content: "\2022 ";
+    font-size: 2rem;
+    color: #00997D;
+    margin-right: 0.5rem;
+  }
+
 }
 
 /* END OF SECTION ABOUT ME - SKILLS LIST*/
@@ -344,13 +352,8 @@ a {
 
 .portfolio {
     color: #ffffff;
-  background-color: #104d43;
+  background-color: #005866;
   width: 100%;
-}
-
-.header__h2 {
-  text-align: center;
-  padding-top: 1rem;
 }
 
 .portfolio__projects {
@@ -478,9 +481,6 @@ a {
   .contact__content{
     flex-basis: 50%;
   }
-  .contact__content--header{
-    font-size: 1.8rem;
-  }
   .contact__content-paragraphe,
   .contact__content-data{
     font-size: 1.2rem;
@@ -494,7 +494,7 @@ a {
 /* START OF SECTION FOOTER*/
 .footer{
   color: #ffffff;
-  background-color: #104d43;
+  background-color: #005866;
   width: 100%;
 
   padding: 1rem;
