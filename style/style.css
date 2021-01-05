@@ -124,6 +124,9 @@ a {
   justify-content: center;
   align-items: center;
 }
+.nav-bar__button{
+ display: none;
+}
 /* WHEN HAMBYRGER IS NOT CLICKED */
 .nav__list--hidden {
   display: none;
@@ -156,6 +159,7 @@ a {
   }
   .button--polish-version {
     color: black;
+    cursor: pointer;
     background-color: #45e6a2;
     border: none;
     outline: none;
