@@ -129,6 +129,30 @@ a {
   overflow: hidden;
 }
 
+/* NAVBAR FOR DESKTOP */
+@media screen and (min-width: 1024px){
+  .grid-container{
+    grid-template-columns: min-content 1fr min-content;
+    grid-column-gap: 2rem;
+  }
+  .menu-icon__container,
+  .mobile-button--polish{
+    display: none;
+  }
+  .close{
+    height: auto;
+  }
+  .button-container{
+    display: inline-block;
+  }
+  .nav-bar{
+    grid-column: 2/3;
+  }
+  .nav-bar__list{
+    display: flex;
+    justify-content: space-between;
+  }
+}
 /* END OF NAV */
 
 /* START OF SECTION HOME */

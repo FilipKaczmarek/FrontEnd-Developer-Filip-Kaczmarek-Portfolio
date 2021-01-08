@@ -11,4 +11,5 @@ hamburgerMenu.addEventListener('click', () => {
         navBar.classList.add('close');
         navBar.style.paddingTop = "0";
     }
-})
+
+});
