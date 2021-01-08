@@ -30,36 +30,37 @@
     ></script>
   </head>
   <body>
-    <header class="nav" id="nav">
 
-      <nav class="nav-bar flex container--fixed">
+    <header class="grid-container" id="header">
 
-        <div class="nav__logo nav__logo--hidden">
-          <a href="#" class="nav__logo-link flex">
-            <img src="./images/logo1.svg" alt="Filip Kaczmarek Logo" class="nav__logo-img" />
-          </a>
-        </div>
+      <div class="logo-container">
+        <a href="#" class="">
+          <img src="./images/logo1.svg" alt="Filip Kaczmarek Logo" class="nav__logo-img" />
+        </a>
+      </div>
 
-        <div class="nav-containter-list nav__list--hidden">
-            <ul class="nav__list flex">
-                <a href="#home"><li class="nav__list-item nav__list-item--hidden">HOME</li></a>
-                <a href="#about-me"><li class="nav__list-item nav__list-item--hidden">ABOUT ME</li></a>
-                <a href="#portfolio"><li class="nav__list-item nav__list-item--hidden">PORTFOLIO</li></a>
-                <a href="#contact"><li class="nav__list-item nav__list-item--hidden">CONNECT</li></a>
-              </ul>
-        </div>
-
-        <div class="nav-bar__button">
-          <button class="button--polish-version">
-            POLISH VERSION
-          </button>
-        </div>
-
-        <div class="nav__icon flex">
-            <i class="fas fa-bars nav__list-icon nav__list-icon--hidden"></i></li>
-          </div>
+      <nav class="nav-bar close">
+        <ul class="nav-bar__list">
+          <li class="nav-bar__list-item"><a href="#home" class="">HOME</a></li>
+          <li class="nav-bar__list-item"><a href="#about-me" class="">ABOUT ME</a></li>
+          <li class="nav-bar__list-item"><a href="#portfolio" class="">PORTFOLIO</a></li>
+          <li class="nav-bar__list-item"><a href="#contact" class=""></href>CONNECT</a></li>
+          <li class="nav-bar__list-item mobile-button--polish"><a href="#" class="">POLISH VERSION</a></li>
+        </ul>
       </nav>
+
+      <div class="button-container">
+        <button class="nav-bar__button">
+          POLISH VERSION
+        </button>
+      </div>
+
+      <div class="menu-icon__container">
+        <i class="fas fa-bars"></i></li>
+      </div>
+
     </header>
+
     <main>
       <section class="home" id="home">
         <div class="home__info flex container--fixed">
@@ -238,5 +239,7 @@
         <p class="footer__copyright-paragraphe">&copy; 2020 | Filip Kaczmarek</p>
       </div>
     </footer>
+
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
